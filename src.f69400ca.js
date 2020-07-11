@@ -92126,8 +92126,7 @@ function (_super) {
                                     body_1.push({
                                       table: table_1
                                     });
-                                  } else {
-                                    console.log(embeddedEntry);
+                                  } else {// console.log(embeddedEntry);
                                   }
 
                                   _b.label = 9;
@@ -92294,7 +92293,8 @@ function (_super) {
         map: __assign({
           $: {
             id: 'map',
-            'xsi:noNamespaceSchemaLocation': 'urn:oasis:names:tc:dita:xsd:map.xsd:1.2'
+            'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
+            'xsi:noNamespaceSchemaLocation': 'urn:oasis:names:tc:dita:xsd:topic.xsd:1.2'
           }
         }, obj)
       });
@@ -92307,7 +92307,9 @@ function (_super) {
       return builder.buildObject({
         topic: __assign({
           $: {
-            id: id
+            id: id,
+            'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
+            'xsi:noNamespaceSchemaLocation': 'urn:oasis:names:tc:dita:xsd:map.xsd:1.2'
           }
         }, obj)
       });
@@ -92551,7 +92553,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57198" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63736" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
