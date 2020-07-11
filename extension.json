@@ -1,0 +1,6 @@
+{
+  "id": "dita-viewer",
+  "name": "dita-viewer",
+  "srcdoc": "./index.html",
+  "sidebar": true
+}
